@@ -1,10 +1,9 @@
+/* Base styles */
 html {
-  /* background-color: #e2e2e2; */
   font-family: helvetica, sans-serif;
 }
 
 .tab-wrapper {
-  /* background-color: green; */
   color: #00B5E4;
   margin: 10px;
 }
@@ -12,8 +11,6 @@ html {
 .tab-wrapper ul {
   list-style-type: none;
   padding: 0;
-  /* border: 2px solid #00B5E4; */
-  /* border-radius: 100px 100px 100px 100px; */
 }
 
 .tab-wrapper li {
@@ -69,7 +66,6 @@ html {
   .tab-wrapper li:last-child {
     border-right: 2px solid #00B5E4;
     border-radius: 0 100px 100px 0;
-    /* border-right: none; */
   }
 
   /* Draw an arrow */
