@@ -3,6 +3,10 @@ html {
   font-family: helvetica, sans-serif;
 }
 
+p {
+  margin-bottom: 50px;
+}
+
 .tab-wrapper {
   color: #00B5E4;
   margin: 10px;

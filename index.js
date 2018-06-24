@@ -1,4 +1,4 @@
-!function() {
+(function() {
   var apiRoute = 'https://jsonplaceholder.typicode.com/posts/'
   var apiResources = {
     'tab-op-new': '1',
@@ -78,4 +78,4 @@
       tabBoxElements[i].onclick = onSelectTab(tabBoxElements[i].id)
     }
   }
-}()
+})()
