@@ -1,11 +1,13 @@
 (function() {
-  var apiRoute = 'https://jsonplaceholder.typicode.com/posts/'
-  var apiResources = {
+  const apiRoute = 'https://jsonplaceholder.typicode.com/posts/'
+  const apiResources = {
     'tab-op-new': '1',
     'tab-op-switch': '2',
     'tab-op-charity': '3',
     'tab-op-existing': '4'
   }
+  const tabComponent = document.getElementById('tab-wrapper')
+  const tabItems = Array.from(tabComponent.children)
 
   function onSelectTab (elemId) {
     return function (clickEvent) {
@@ -71,11 +73,14 @@
   }
 
   window.onload = function () {
-    console.log('loaded')
 
-    var tabBoxElements = document.getElementsByClassName('tab-box')
-    for (var i = 0; i < tabBoxElements.length; i++) {
-      tabBoxElements[i].onclick = onSelectTab(tabBoxElements[i].id)
-    }
+
+    // for (var i = 0; i < tabBoxElements.length; i++) {
+    //   tabBoxElements[i].onclick = onSelectTab(tabBoxElements[i].id)
+    // }
+    tabItems.forEach(elem => elem.onclick = function () {
+      clearSelectedClasses()
+      elem.classList.add('selected')
+    })
   }
 })()

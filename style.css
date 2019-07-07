@@ -8,11 +8,6 @@ p {
 }
 
 .tab-wrapper {
-  color: #00B5E4;
-  margin: 10px;
-}
-
-.tab-wrapper ul {
   list-style-type: none;
   padding: 0;
 }
@@ -41,7 +36,7 @@ p {
   border-radius: 0 0 15px 15px;
 }
 
-.tab-wrapper .selected {
+.tab-wrapper li.selected {
   color: white;
   background-color: #00B5E4;
   position: relative;
@@ -50,7 +45,7 @@ p {
 /* Flex styles */
 @media screen and (min-width: 768px) {
 
-  .tab-wrapper ul {
+  .tab-wrapper {
     display: flex;
   }
 
@@ -73,7 +68,7 @@ p {
   }
 
   /* Draw an arrow */
-  .tab-wrapper .selected:after {
+  .tab-wrapper li.selected:after {
     content: ' ';
     position: absolute;
     top: 100%;
